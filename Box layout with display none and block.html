@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main
+{
+   height: 100px;
+   background-color: black;
+   align-items: center;
+   justify-content: center;
+   margin: 0px;
+   display: flex;
+}
+
+.main .menu
+{
+    font-size: 15px;
+    color: white;
+    margin-right: 75px;
+    position: relative;
+    display:inline;
+    background: rgb(24, 24, 207);
+    text-decoration: none;
+}
+
+.main li a{ text-decoration: none; color: white;}
+
+
+.submenu 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    color: white;
+    background: lightcoral;
+}
+
+
+.menu:hover .submenu
+
+{
+    display: block;
+}
+
+.sub
+
+{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 100%;
+    color: white;
+    background: rgb(224, 15, 224);
+}
+
+.a:hover .sub
+{
+   display: block;
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li class="menu"><a href="#">Home</a>
+
+            
+            </li>
+            <li class="menu"><a href="#">About</a></li>
+            <li class="menu"><a href="#">Sections</a>
+            <ul class="submenu">
+
+                <li>Watches</li>
+                <li class="a">Belts
+                       <ul class="sub">
+                           <li>Leather Belts</li>
+                           <li>Normal Belts </li>
+                           <li>Heavy Belts</li>
+
+                       </ul>
+
+                </li>
+
+
+            </ul>
+            
+            
+            </li>
+            <li class="menu"><a href="#">Serivices</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
